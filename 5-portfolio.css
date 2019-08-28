@@ -2,8 +2,25 @@
 	font-family: Livvic;
 }
 
+
 #welcome-section {
 	height: 100vh;
+	background-color: #23a8dc;
+	text-align: center;
+}
+
+#welcome-header {
+	color: #fff;
+	font-size: 70px;
+	margin-top: 40vh;
+	display: inline-block;
+}
+
+#welcome-tag {
+	display: inline-block;
+	font-family: Montserrat;
+	font-size: 30px;
+	color: #fff;
 }
 
 #navbar {
@@ -15,23 +32,26 @@
 	background-color: #ddd;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 #contact {
 	text-align: center;
 	font-size: 40px;
+	color: #555;
 }
 
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background: #000;
 }
 
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-white);
+  color: #555;
 }
 
 @media (max-width: 28.75em) {
@@ -40,7 +60,6 @@
   }
 }
 
-/* "Automagic" image grid using no media queries */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -68,8 +87,15 @@
 }
 
 .code {
-  color: var(--main-gray);
+  color: #000;
   transition: color 0.3s ease-out;
+}
+
+.nav-link {
+  list-style-type: none;
+  list-style: none;
+  float: right;
+  display: inline-block;
 }
 
 .project:hover .code {
@@ -87,3 +113,7 @@
   padding: 2rem 0.5rem;
 }
 
+a {
+	text-decoration: none;
+	color: #777;
+}
